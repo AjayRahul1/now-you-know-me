@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Punnamaraju Ajay Rahul Prasad - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <input type="checkbox" id="darkModeCheck">
+        <label for="darkModeCheck">Dark Mode</label>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="bi-card">
+        <div class="card-body">
+          <div class="card-body-header">
+            <h1>Ajay Rahul Prasad Punnamaraju</h1>
+          </div>
+          <div class="card-body-content">
+            <ul>
+              <li>👨🏻‍💻 I'm a Full Stack Web Developer | FastAPI, React, MySQL | Philomath | SDE Aspirant!</li>
+              <li>👨🏻‍🎓 Currently Senior (Final Year) Student at Gayatri Vidya Parishad College of Engineering (Autonomous).</li>
+              <li>📒 B.Tech CGPA: 8.65.</li>
+              <li>🌱 Forever Learner! I'm currently learning ReactJS.</li>
+              <li>📫 Reach me at <a href="mailto:p.ajayrahul02@gmail.com">p.ajayrahul02@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-img">
+          <img src="assets/me.jpg">
+        </div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <div class="bi-card">
+        <div class="card-body-header">
+          <h2>About me:</h2>
+        </div>
+        <div class="card-body-content ">
+          <ul>
+            <li>📒 B.Tech CGPA: 8.65.</li>
+            <li>🌐 Web Surfing and YouTube Surfing are my hobbies.</li>
+            <li>🔭 I'm currently working on my Final Year Project "Composing Music through Generative AI".</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
+<script>
+  function toggleDarkMode() {
+    const darkModeToggle = document.getElementById("darkModeCheck");
+    if (darkModeToggle.checked) {
+      document.querySelector('html').classList.add("darkMode");
+      document.querySelector('img').classList.add("darkMode");
+    } else {
+      document.querySelector('html').classList.remove("darkMode");
+      document.querySelector('img').classList.remove("darkMode");
+    }
+  }
+
+  // Load event listener for dark mode toggle
+  document.addEventListener('DOMContentLoaded', toggleDarkMode);
+  document.getElementById("darkModeCheck").addEventListener("change", toggleDarkMode);
+</script>
